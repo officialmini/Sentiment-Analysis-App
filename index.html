@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <!-- Header -->
+        <header>
+            <h1>💬 Sentiment Analysis App</h1>
+            <p class="subtitle">Discover the emotion behind your words</p>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Input Section -->
+            <section class="input-section">
+                <label for="textInput">Enter your text:</label>
+                <textarea 
+                    id="textInput" 
+                    placeholder="Type or paste your text here..."
+                    rows="6"
+                ></textarea>
+                <button id="analyzeBtn" class="btn-primary">
+                    🔍 Analyze Sentiment
+                </button>
+            </section>
+
+            <!-- Results Section -->
+            <section id="results" class="results hidden">
+                <h2>📊 Analysis Results</h2>
+                
+                <!-- Censored Text -->
+                <section class="result-card">
+                    <h3>Your Text:</h3>
+                    <section id="userText" class="user-text"></section>
+                </section>
+
+                <!-- Sentiment Display -->
+                <section class="sentiment-display">
+                    <section class="sentiment-card">
+                        <h3>Sentiment</h3>
+                        <section id="sentimentValue" class="sentiment-value">
+                            <span id="sentimentEmoji"></span>
+                            <span id="sentimentText"></span>
+                        </section>
+                    </section>
+
+                    <section class="sentiment-card">
+                        <h3>Polarity Score</h3>
+                        <section id="polarityValue" class="polarity-value"></section>
+                    </section>
+                </section>
+
+                <!-- Polarity Scale -->
+                <section class="polarity-scale">
+                    <h3>Polarity Scale</h3>
+                    <section class="scale-container">
+                        <section class="scale-bar">
+                            <section id="polarityIndicator" class="polarity-indicator"></section>
+                        </section>
+                        <section class="scale-labels">
+                            <span>Negative (-1)</span>
+                            <span>Neutral (0)</span>
+                            <span>Positive (+1)</span>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Sentiment Analysis App | Group 8</p>
+        </footer>
+    </section>
+
+    
+    <script src="sentiment.js"></script>
+    <script src="script.js" defer></script>
+    
+</body>
+
+</html>
