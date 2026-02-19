@@ -20,6 +20,11 @@
             }
         });
 
+       closeButton.addEventListener('click', () => {
+            results.classList.add('hidden')
+            textInput.value = ""
+        });
+
         textInput.addEventListener('input', () => {
             analyzeBtn.style.opacity = textInput.value.trim() ? '1' : '0.5';
         });
@@ -110,4 +115,5 @@
         }
 
         // Initialize button state
+
         analyzeBtn.style.opacity = '0.7';
