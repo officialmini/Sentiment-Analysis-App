@@ -9,6 +9,7 @@
         const sentimentText = document.getElementById('sentimentText');
         const polarityValue = document.getElementById('polarityValue');
         const polarityIndicator = document.getElementById('polarityIndicator');
+        const closest = document.getElementById('closeBtn');
 
         // Event listeners
         analyzeBtn.addEventListener('click', analyzeSentiment);
@@ -117,3 +118,4 @@
         // Initialize button state
 
         analyzeBtn.style.opacity = '0.7';
+
